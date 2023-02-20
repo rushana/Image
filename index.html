@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link href="assets/lib/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <title>Title attribute and screen reader Accessibility</title>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-md-center">
+                <h1 class="display-4">Title attribute and screen reader Accessibility</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main - Button -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Button</h2>
+            </div>
+        </div>
+
+        <!-- Button | Native| Title | -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Native| Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-light" type="button" title="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="" />
+                </button>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;button type="button" title="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Native|  Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Native|  Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-light" type="button" title="Print" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="" />
+                </button>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;button type="button" title="Print" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Native | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Native |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-light" type="button">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="" />
+                </button>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;button type="button"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Native | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Native | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-light" type="button" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </button>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;button type="button" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Custom| Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Custom| Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-light" type="button" role="button" title="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div type="button" role="button" title="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Custom|  Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Custom|  Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-light" type="button" role="button" title="Print" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div type="button" role="button" title="Print" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Custom | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Custom |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-light" type="button" role="button">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div type="button" role="button"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button | Custom | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button | Custom | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-light" type="button" role="button" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div type="button" role="button" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button| Native | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button| Native | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-info" type="button" title="Print">Print</button>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;button type="button" title="Print"&gt;
+    Print
+&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button| Native | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Button| Native | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-info" type="button" title="Print">Print</div>
+            </div>
+            <div class="col-md-12">
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div type="button" title="Print"&gt;
+    Print
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main - Links -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Links</h2>
+            </div>
+        </div>
+
+        <!-- Link | Native| Title | -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Native| Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-link" href="#" title="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;a href="somepage.html" title="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Native|  Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Native|  Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-link" href="#" title="Print" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;a href="somepage.html" title="Print" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Native | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Native |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-link" href="#">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;a href="somepage.html"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Native | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Native | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-link" href="#" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;a href="somepage.html" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Custom| Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Custom| Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-link" href="#" role="link" title="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" role="link" title="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Custom|  Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Custom|  Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-link" href="#" role="link" title="Print" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" role="link" title="Print" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Custom | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Custom |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-link" href="#" role="link">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" role="link"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link | Custom | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link | Custom | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-link" href="#" role="link" aria-label="Print">
+                    <img class="img-fluid print-btn" src="assets/img/print-icon.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" role="link" aria-label="Print"&gt;
+    &lt;img src="..." alt=""&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link| Native | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link| Native | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-info" href="#" title="Print">
+                    Print
+                </a>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;a href="somepage.html" title="Print"&gt;
+    Print
+&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link| Custom | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Link| Native | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-info" href="#" title="Print">
+                    Print
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" title="Print"&gt;
+    Print
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main - Drop Down -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Drop Down</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link| Custom | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn btn-info" href="#" title="Print">
+                    Print
+                </div>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;div href="somepage.html" title="Print"&gt;
+    Print
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><hr/></div>
+        </div>
+    </div>
+
+    <!-- Main - Dropdown -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Drop Down</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link| Custom | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group row">
+                    <label for="searchTerm1">Search for:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchTerm1" size="30" value="" name="searchTerm" placeholder="Search">
+                        <div class="input-group-append">
+                            <select class="form-control" title="Search in" id="scope1">
+                                <option>Select term</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;label for="searchTerm"&gt;Search for:&lt;/label&gt;
+&lt;input id="searchTerm" type="text" size="30" value="" name="searchTerm"&gt;
+&lt;select title="Search in" id="scope"&gt;
+    &lt;option&gt;Search term&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown | Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown | Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group row">
+                    <label for="searchTerm2">Search for:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchTerm2" size="30" value="" name="searchTerm" placeholder="Search">
+                        <div class="input-group-append">
+                            <select class="form-control" title="Search in" aria-label="Search in" id="scope2">
+                                <option>Select term</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;label for="searchTerm"&gt;Search for:&lt;/label&gt;
+&lt;input id="searchTerm" type="text" size="30" value="" name="searchTerm"&gt;
+&lt;select title="Search in" aria-label="Search in" id="scope"&gt;
+    &lt;option&gt;Search term&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group row">
+                    <label for="searchTerm3">Search for:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchTerm3" size="30" value="" name="searchTerm" placeholder="Search">
+                        <div class="input-group-append">
+                            <select class="form-control" id="scope3">
+                                <option>Select term</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;label for="searchTerm"&gt;Search for:&lt;/label&gt;
+&lt;input id="searchTerm" type="text" size="30" value="" name="searchTerm"&gt;
+&lt;select id="scope"&gt;
+    &lt;option&gt;Search term&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown | aria-label -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown | aria-label</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group row">
+                    <label for="searchTerm4">Search for:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchTerm4" size="30" value="" name="searchTerm" placeholder="Search">
+                        <div class="input-group-append">
+                            <select class="form-control" id="scope4" aria-label="Search in">
+                                <option>Select term</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;label for="searchTerm"&gt;Search for:&lt;/label&gt;
+&lt;input id="searchTerm" type="text" size="30" value="" name="searchTerm"&gt;
+&lt;select aria-label="Search in" id="scope"&gt;
+    &lt;option&gt;Search term&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main - Image -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Image</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Image | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid puppy-img" src="assets/img/puppy.jpeg" title="Photo of a puppy">
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;img src="my-favorite-puppy.jpg" title="Photo of a puppy"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image | Title | alt | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Image | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid puppy-img" src="assets/img/puppy.jpeg" title="Photo of a puppy" alt="Pomeranian puppy, sleeping in an awkward position">
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;img src="my-favorite-puppy.jpg" title="Photo of a puppy" alt="Pomeranian puppy, sleeping in an awkward position"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Image |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid puppy-img" src="assets/img/puppy.jpeg">
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;img src="my-favorite-puppy.jpg"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image | alt -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Image | alt |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid puppy-img" src="assets/img/puppy.jpeg" alt="Pomeranian puppy, sleeping in an awkward position">
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;img src="my-favorite-puppy.jpg" alt="Pomeranian puppy, sleeping in an awkward position"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main - Search Function -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Search Function</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search | Title | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Search | Title |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" title="Type search term here">
+                    </div>
+                    <input type="submit" class="btn btn-primary mb-2" value="Search" />
+                </form>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;input type="text" title="Type search term here" /&gt;
+&lt;input type="submit" value="Search" /&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search | Title | aria-label | -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Search | Title | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" title="Type search term here" aria-label="Type search term here"/>
+                    </div>
+                    <input type="submit" class="btn btn-primary mb-2" value="Search" />
+                </form>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;input type="text" title="Type search term here" aria-label="Type search term here" /&gt;
+&lt;input type="submit" value="Search" /&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search |  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Search |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" />
+                    </div>
+                    <input type="submit" class="btn btn-primary mb-2" value="Search" />
+                </form>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;input type="text" /&gt;
+&lt;input type="submit" value="Search" /&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search | aria-label  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Search | aria-label |</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" aria-label="Type search term here" />
+                    </div>
+                    <input type="submit" class="btn btn-primary mb-2" value="Search" />
+                </form>
+            </div>
+            <div class="col-md-12"><br/></div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <pre class="card-text"><code>&lt;input type="text" aria-label="Type search term here" /&gt;
+&lt;input type="submit" value="Search" /&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding-top: 10%">
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper-1.12.9.min.js"></script>
+    <script src="assets/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
